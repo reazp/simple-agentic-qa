@@ -11,6 +11,13 @@ def create_pr(new_value):
     base_branch = repo.get_branch("main")
     new_branch_name = "agent-fix-userid"
 
+    # Delete branch if it already exists
+    try:
+        branch = repo.get_git_ref(f"heads/{new_branch_name}")
+        branch.delete()
+    except:
+        pass
+
     repo.create_git_ref(
         ref=f"refs/heads/{new_branch_name}",
         sha=base_branch.commit.sha
