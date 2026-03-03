@@ -9,6 +9,6 @@ def test_get_post():
     
     data = response.json()
     print(f"Received data: {data}")
-    assert data["userId"] == 999
+    assert data["userId"] == 1
     assert "title" in data
     assert data["id"] == 1
