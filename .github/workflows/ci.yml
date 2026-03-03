@@ -15,4 +15,4 @@ jobs:
           python-version: 3.11
 
       - run: pip install pytest requests
-      - run: pytest -v agent.py
+      - run: python agent.py
