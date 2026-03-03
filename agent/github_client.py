@@ -16,7 +16,7 @@ def create_pr(new_value):
         sha=base_branch.commit.sha
     )
 
-    file = repo.get_contents("tests/test_api.py", ref="main")
+    file = repo.get_contents("tests/test_simple_get_request.py", ref="main")
 
     updated_content = file.decoded_content.decode().replace(
         'assert data["userId"] == 999',
