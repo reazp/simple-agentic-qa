@@ -17,15 +17,23 @@ A simple agentic question-answering system using Python and AI agents.
 
 Run pytest
 ↓
-Failure?
+Pytest Fails
 ↓
-Extract assertion mismatch
+Agent Runs
 ↓
-Call API directly
+Parse Failure
 ↓
-Compare expected vs actual
+Call API To Validate
 ↓
-Update assertion in test file
+Generate Fix Suggestion
+↓
+Create New Branch
+↓
+Modify Test File
+↓
+Commit
+↓
+Open Pull Request
 
 ## Usage
 
