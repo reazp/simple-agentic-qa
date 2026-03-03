@@ -4,8 +4,21 @@ A simple agentic question-answering system using Python and AI agents.
 
 ## Files
 
-- `agent.py` - Main agent implementation
-- `simple-get-request.py` - Simple HTTP GET request utility
+simple-agentic-qa/
+│
+├── tests/
+│ └── test_simple_get_request.py
+│
+├── agent/
+│ ├── **init**.py
+│ ├── runner.py
+│ ├── failure_parser.py
+│ ├── fixer.py
+│ └── github_client.py
+│
+├── requirements.txt
+├── agent_main.py
+└── .github/workflows/ci.yml
 
 ## Setup
 
