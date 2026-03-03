@@ -15,5 +15,5 @@ jobs:
           python-version: 3.11
 
       - run: pip install pytest requests
-      - run: python agent.py
+      - run: pytest -v simple-get-request.py
       - run: pytest -v
